@@ -12,16 +12,12 @@ function App() {
   
   return (
     <div className="container">
-{/* 
-      <h3 style={ estilos }>{ mensaje }</h3> */}
 
       <NavBar/>
-      <ItemListContainer greeting={"Saludando"}/>
+      <ItemListContainer/>
 
     </div>
-  );
-
-  
+  ); 
 }
 
 export default App;
