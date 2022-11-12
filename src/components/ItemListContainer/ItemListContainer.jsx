@@ -23,7 +23,27 @@ const ItemListContainer = (obj) => {
   return (
     <div> 
       <h1> ItemListContainer </h1>
+      <h2>Contenido de lista</h2>
       <button onClick={cambiarEstado}>cambiar estado</button>
+
+      { products.map(obj => 
+      <div key={obj.id}>
+        <div>
+          {obj.name}
+        </div>
+        <div>
+          {obj.Pokemon}
+        </div>
+        <div>
+          {obj.stock}
+        </div>
+        <div>
+          Precio: {obj.precio}
+        </div>
+        <div>
+          <img src={obj.foto}/>
+        </div>
+      </div>)}
     </div>
   )
 }
