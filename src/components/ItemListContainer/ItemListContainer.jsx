@@ -28,23 +28,21 @@ const ItemListContainer = (obj) => {
       <button onClick={cambiarEstado}>cambiar estado</button>
 
       { products.map(obj => 
-      <div key={obj.id}>
-        <div>
-          {obj.name}
-        </div>
-        <div>
-          {obj.Pokemon}
-        </div>
-        <div>
-          {obj.stock}
-        </div>
-        <div>
-          Precio: {obj.precio}
-        </div>
-        <div>
-          <img src={obj.foto} />
-        </div>
-      </div>)}
+          <div key={obj.id} className="w-50">
+            <div className="card-header">
+              {obj.name}
+            </div>
+            <div className="card-body">
+              {obj.stock}
+            </div>
+            <div className="card-body">
+              <img src={obj.foto} className="w-50"/>
+            </div>
+            <div className="card-footer">
+              Precio: {obj.precio}
+            </div>
+            
+          </div>)}
     </div>
   )
 }

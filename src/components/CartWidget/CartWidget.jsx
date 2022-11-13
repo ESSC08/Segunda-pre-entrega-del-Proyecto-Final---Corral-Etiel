@@ -4,7 +4,6 @@ import React from 'react'
 const CartWidget = () => {
   return (
     <div>
-      {/* <img src={carrito} class="imagen"></img> */}
       <p>Carrito de compras</p>
     </div>
   )
