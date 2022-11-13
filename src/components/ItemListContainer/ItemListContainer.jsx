@@ -1,3 +1,4 @@
+import "./ItemListContainer.css"
 import React from 'react'
 import { useEffect, useState } from 'react'
 import { gFetch } from '../../utils/gFetch'
@@ -41,7 +42,7 @@ const ItemListContainer = (obj) => {
           Precio: {obj.precio}
         </div>
         <div>
-          <img src={obj.foto}/>
+          <img src={obj.foto} />
         </div>
       </div>)}
     </div>
